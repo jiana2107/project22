@@ -32,6 +32,7 @@ function setup() {
 	world = engine.world;
 
 	packageBody = Bodies.circle(width/2 , 200 , 5 , {restitution:0, isStatic:true});
+	packageBody.setScale(0.5);
 	World.add(world, packageBody);
 	
 
@@ -58,7 +59,6 @@ function keyPressed() {
  if (keyCode === DOWN_ARROW) {
     // Look at the hints in the document and understand how to make the package body fall only on
 	Matter.Body.setStatic(packageBody, false);
-	packageBody.setScale(0.5);
   }
 }
 
