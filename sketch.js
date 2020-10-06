@@ -58,7 +58,7 @@ function keyPressed() {
  if (keyCode === DOWN_ARROW) {
     // Look at the hints in the document and understand how to make the package body fall only on
 	Matter.Body.setStatic(packageBody, false);
-	Matter.Body.setScale(packageBody, 0.5); 
+	Matter.Body.setScale(packageBody, 0.5,0.5); 
   }
 }
 
